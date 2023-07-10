@@ -38,7 +38,7 @@ body::before{
     gap: 1%;
     min-height: calc(100vh - 152px);
     justify-content: center;
-    margin: auto 10%;
+    margin: 0 10%;
 }
 
 .selecao-de-personagens .lista-de-personagens {
