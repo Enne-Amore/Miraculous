@@ -21,7 +21,7 @@ const personagens = document.querySelectorAll('.personagem');
 personagens.forEach((personagem) => {
     personagem.addEventListener('mouseenter', () => {
 
-        if(window.innerWidth < 600) {
+        if(window.innerWidth < 450) {
             windows.scrollTo({top: 0, behavior: 'smooth'});
         }
 
