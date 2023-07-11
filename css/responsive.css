@@ -1,6 +1,6 @@
 @media (max-width: 1220px){
     body::before{
-        height: 250%;
+        height: 140%;
     }
     .selecao-de-personagens{
         flex-direction: column-reverse;
@@ -20,10 +20,7 @@
 
     .personagem-selecionada {
         margin: 0;
-    }
-    .personagem-selecionada .personagem-grande {
-        width: 60%;
-        height: auto;
+        width: 80%;
     }
     .personagem-selecionada .nome-de-personagem {
         font-size: 1.2em;
