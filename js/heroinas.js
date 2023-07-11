@@ -22,7 +22,7 @@ personagens.forEach((personagem) => {
     personagem.addEventListener('mouseenter', () => {
 
         if(window.innerWidth < 450) {
-            windows.scrollTo({top: 0, behavior: 'smooth'});
+            window.scrollTo({top: 0, behavior: 'smooth'});
         }
 
         // passo 3 - verificar se já exista uma personagem selecionada, se sim, devemos remover a seleção dela 
