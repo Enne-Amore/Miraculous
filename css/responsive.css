@@ -1,6 +1,6 @@
 @media screen and (max-width: 600px) {
     body::before{
-        max-height: 150%;
+        max-height: 160%;
         min-height: 140%;
     }
     .selecao-de-personagens{
