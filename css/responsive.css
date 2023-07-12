@@ -1,7 +1,7 @@
 @media screen and (max-width: 600px) {
     body::before{
-        min-height: 130%;
-        height: 150%;
+        max-height: 170%;
+        height: 130%;
     }
     .selecao-de-personagens{
         flex-direction: column-reverse;
