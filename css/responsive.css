@@ -58,10 +58,10 @@
         gap: 9px;
     }
     .lista-de-personagens .personagem img {
-        border-radius: 20px;
+        border-radius: 18px;
     }
     .lista-de-personagens .personagem.selecionada {
-        border-radius: 20px;
+        border-radius: 18px;
     }
 
     .personagem-selecionada {
