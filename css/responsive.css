@@ -1,6 +1,6 @@
 @media screen and (max-width: 600px) {
     body::before{
-        height: 170%;
+        height: 180%;
     }
     .selecao-de-personagens{
         flex-direction: column-reverse;
@@ -16,6 +16,12 @@
     }
     .selecao-de-personagens .lista-de-personagens{
         gap: 9px;
+    }
+    .lista-de-personagens .personagem img {
+        border-radius: 10px;
+    }
+    .lista-de-personagens .personagem.selecionada {
+        border-radius: 10px;
     }
 
     .personagem-selecionada {
@@ -50,6 +56,12 @@
     }
     .selecao-de-personagens .lista-de-personagens{
         gap: 9px;
+    }
+    .lista-de-personagens .personagem img {
+        border-radius: 20px;
+    }
+    .lista-de-personagens .personagem.selecionada {
+        border-radius: 20px;
     }
 
     .personagem-selecionada {
