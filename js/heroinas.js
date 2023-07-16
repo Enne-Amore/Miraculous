@@ -57,11 +57,11 @@ function alterarImagemDaPersonagemSelecionada(personagem) {
 
 function alterarNomeDaPersonagem(personagem) {
     const nomePersonagem = document.getElementById('nome-de-personagem');
-    nomePersonagem.innerText = personagem.getAttribute('data-name');
+    nomePersonagem.innerHTML = personagem.getAttribute('data-name');
 }
 
 function alterarDescricaoDaPersonagem(personagem) {
     const descricaoPersonagem = document.getElementById('descricao-de-personagem');
-    descricaoPersonagem.innerText = personagem.getAttribute('data-description');
+    descricaoPersonagem.innerHTML = personagem.getAttribute('data-description');
 }
 

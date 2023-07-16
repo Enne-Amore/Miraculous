@@ -33,7 +33,7 @@
         font-size: 1.2em;
     }
     .personagem-selecionada .descricao-de-personagem{
-        width: 80%;
+        width: 90%;
         font-size: 0.8em;
         margin: 20px auto;
     }
@@ -45,7 +45,7 @@
     }
     .selecao-de-personagens{
         flex-direction: column-reverse;
-        max-width: 430px;
+        max-width: 70%;
         margin: 0 auto;
     }
     .selecao-de-personagens .personagens{
