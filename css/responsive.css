@@ -1,3 +1,7 @@
+@charset "UTF-8";
+
+/* A responsividade do site */
+
 @media screen and (max-width: 600px) {
     body::before{
         height: 190%;
