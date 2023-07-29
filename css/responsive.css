@@ -20,7 +20,7 @@
     }
     .selecao-de-personagens .lista-de-personagens{
         gap: 9px;
-        margin: auto 2%;
+        margin: auto 1.5%;
     }
     .lista-de-personagens .personagem img {
         border-radius: 15px;
