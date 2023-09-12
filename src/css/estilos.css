@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+/* A mente do site */
+
+body {
+    background-color: rgb(46, 46, 255);
+    color: white;
+    font-family: Parisienne;
+    font-size: 1.8em;
+}
+body::before{
+    content: "";
+    background-image: url(../personagens\ miraculous/fundo.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center bottom;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 180vh;
+    opacity: 0.6;
+}
+
+/* O corpo do site */
+/* E o seu cabeçalho */
+.cabecalho {
+    display: flex;
+    justify-content: center;
+}
+.cabecalho .logo {
+    width: 40%;
+    height: auto;
+    margin: 2%;
+    margin-bottom: 5%;
+}
+
+/* o conteúdo do site */
+
+.selecao-de-personagens {
+    display: flex;
+    flex-direction: row; /* Por padrão. Nesse caso, nem precisa. */
+    align-items: center;
+    gap: 1%;
+    min-height: calc(100vh - 152px);
+    justify-content: center;
+    margin: 0 10%;
+}
+.selecao-de-personagens .lista-de-personagens {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1%;
+    justify-content: center;
+}
+.selecao-de-personagens .personagens {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    gap: 8px;
+}
+.selecao-de-personagens .personagens .titulo {
+    letter-spacing: 0.3px;
+    text-transform: none;
+    border-bottom: 2px solid #ff0000;
+    width: 100%;
+    text-align: center;
+    font-size: 1.9em;
+}
+.lista-de-personagens .personagem img {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    border-bottom: 10px ridge #ff0000;
+}
+.lista-de-personagens .personagem.selecionada {
+    border-radius: 30px;
+    box-shadow: 0px 0px 24px 5px #ff0000;
+    transition-duration: .1s;
+}
+.personagem-selecionada {
+    text-align: center;
+    max-height: 100%;
+    margin-left: 5%;
+    margin-top: 5%;
+    box-shadow: 0px 0px 24px 5px #f12424;
+    width: 100%;
+}
+.personagem-selecionada .personagem-grande {
+    width: 100%;
+    height: 100%;
+}
+.personagem-selecionada .nome-de-personagem {
+    border-bottom: 2px solid #ff0000;
+    letter-spacing: 4px;
+    text-transform: capitalize;
+    width: 100%;
+    text-align: center;
+}
+.personagem-selecionada .descricao-de-personagem {
+    line-height: 1em;
+    text-align: center;
+    margin-top: 0.8em;
+    width: 100%;
+    font-size: 1em;
+    padding: 0% 2% 3%;
+}
+
+/* O rodapé do site */
+
+.rodape {
+    margin-top: 5%;
+    margin: 6% auto;
+    text-align: center;
+}
+.rodape a{
+    color: #ff0000;
+}
+.rodape a:hover {
+    color: #ff3d3d;
+    transition-duration: .5s;
+}
+.rodape a:active {
+    color: white;
+    transition-duration: .1s;
+}
