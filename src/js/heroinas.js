@@ -17,29 +17,41 @@
 */
 const personagens = document.querySelectorAll('.personagem');
 
-// passo 2 - adicionar a classe selecionado na personagem que a usuária passar o cursor do mouse
+// passo 2 - adicionar a classe selecionada na personagem que a usuária passar o cursor do mouse
 personagens.forEach((personagem) => {
+
+    // Usando o mouse
     personagem.addEventListener('mouseenter', () => {
-
-        if(window.innerWidth < 450) {
-            window.scrollTo({top: 0, behavior: 'smooth'});
-        }
-
-        // passo 3 - verificar se já exista uma personagem selecionada, se sim, devemos remover a seleção dela 
-        removerSelecaoDaPersonagem();
-
-        personagem.classList.add('selecionada');
-
-        // OBJETIVO 2 - quando passar o mouse em cima da personagem na listagem, trocar a imagem, o nome e a descrição da personagem grande
-        alterarImagemDaPersonagemSelecionada(personagem);
-
-        // passo 3 - alterar o nome da personagem grande
-        alterarNomeDaPersonagem(personagem);
-
-        // passo 4 - alterar a descrição da personagem grande
-        alterarDescricaoDaPersonagem(personagem);
+        tratarMouseOver(personagem)
     })
+
+    // Usando a tecla tab
+    personagem.addEventListener('focusin', () => {
+        tratarMouseOver(personagem)
+    })
+
 })
+
+function tratarMouseOver(personagem) {
+
+    // Ao clicar na personagem pelo celular
+    if(window.innerWidth < 450) {
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    }
+
+    // passo 3 - verificar se já exista uma personagem selecionada, se sim, devemos remover a seleção dela 
+    removerSelecaoDaPersonagem();
+    personagem.classList.add('selecionada');
+
+    // OBJETIVO 2 - quando passar o mouse em cima da personagem na listagem, trocar a imagem, o nome e a descrição da personagem grande
+    alterarImagemDaPersonagemSelecionada(personagem);
+
+    // passo 3 - alterar o nome da personagem grande
+    alterarNomeDaPersonagem(personagem);
+
+    // passo 4 - alterar a descrição da personagem grande
+    alterarDescricaoDaPersonagem(personagem);
+}
 
 function removerSelecaoDaPersonagem() {
     const personagemSelecionada = document.querySelector('.selecionada');
@@ -52,7 +64,7 @@ function alterarImagemDaPersonagemSelecionada(personagem) {
 
     // passo 2 - alterar a imagem da personagem grande
     const idPersonagem = personagem.attributes.id.value;
-    imagemPersonagemGrande.src = `./src/personagens\ miraculous/${idPersonagem}.jpg`;
+    imagemPersonagemGrande.src = `./src/img/${idPersonagem}.jpg`;
 }
 
 function alterarNomeDaPersonagem(personagem) {
@@ -64,4 +76,3 @@ function alterarDescricaoDaPersonagem(personagem) {
     const descricaoPersonagem = document.getElementById('descricao-de-personagem');
     descricaoPersonagem.innerHTML = personagem.getAttribute('data-description');
 }
-

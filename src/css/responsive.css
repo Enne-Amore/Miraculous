@@ -1,7 +1,22 @@
 @charset "UTF-8";
 
 /* A responsividade do site */
+/* Ajustes nas alturas da imagem de fundo */
+@media screen and (max-height: 1023px) and (max-width: 1024px) and (min-width: 600px) {
+    body::before {
+        background-attachment: fixed;
+        min-height: 400vh;
+    }
+}
 
+@media screen and (min-height: 2000px) {
+    body::before {
+        background-attachment: fixed;
+        max-height: 130vh;
+    }
+}
+
+/* Ajustes gerais nas telas menores */
 @media screen and (max-width: 600px) {
     body {
         font-size: 8vw;
@@ -41,13 +56,16 @@
     }
     .personagem-selecionada .descricao-de-personagem{
         width: 90%;
-        font-size: 0.8em;
-        margin: 20px auto;
+        font-size: 0.7em;
+        margin: 15px auto;
+        padding: 0 1%;
+        line-height: 1.4em;
     }
 
     .rodape {
         font-size: 7.5vw;
         margin-top: 15%;
+        width: 90%;
     }
 }
 
@@ -88,26 +106,13 @@
         font-size: 1.2em;
     }
     .personagem-selecionada .descricao-de-personagem{
-        font-size: 0.8em;
-        margin: 20px auto;
+        font-size: 0.6em;
+        margin: 20px auto 0;
     }
 
     .rodape {
         font-size: 7.5vw;
         margin-top: 10%;
-    }
-}
-/* Ajustes nas alturas da imagem de fundo */
-@media screen and (max-height: 1023px) and (max-width: 1024px) {
-    body::before {
-        background-attachment: fixed;
-        min-height: 400vh;
-    }
-}
-
-@media screen and (min-height: 2000px) {
-    body::before {
-        background-attachment: fixed;
-        max-height: 130vh;
+        width: 90%;
     }
 }
