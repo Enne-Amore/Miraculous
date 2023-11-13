@@ -19,7 +19,7 @@ body::before{
     z-index: -1;
     width: 100%;
     min-height: 100vh;
-    height: 200vh;
+    height: 230vh;
     opacity: 0.6;
 }
 
@@ -128,20 +128,32 @@ body::before{
     width: 60%;
     border-radius: 1em;
     margin: 6% auto;
-    padding: 1%;
+    padding: 1.5%;
     text-align: center;
     font-size: 1.2em;
 }
+
+.rodape hr {
+    margin: 2% 5%;
+}
+
+.rodape .lista-de-fontes {
+    display: flex;
+    flex-direction: column;
+}
+
 .rodape a {
     color: #ff0000;
     text-decoration: none;
     font-weight: bold;
+    border-radius: 1em;
+    padding: 0.5%;
+    transition-duration: .2s;
 }
 .rodape a:hover {
     color: #ff3d3d;
-    transition-duration: .5s;
+    background-color: rgba(255, 255, 255, 0.034);
 }
 .rodape a:active {
     color: white;
-    transition-duration: .1s;
 }

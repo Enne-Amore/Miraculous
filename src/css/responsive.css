@@ -2,17 +2,17 @@
 
 /* A responsividade do site */
 /* Ajustes nas alturas da imagem de fundo */
-@media screen and (max-height: 1023px) and (max-width: 1024px) and (min-width: 600px) {
+@media screen and (max-height: 1023px) and (max-width: 1024px) and (min-width: 768px) {
     body::before {
         background-attachment: fixed;
-        min-height: 400vh;
+        min-height: 430vh;
     }
 }
 
 @media screen and (min-height: 2000px) {
     body::before {
         background-attachment: fixed;
-        max-height: 130vh;
+        max-height: 180vh;
     }
 }
 
@@ -22,7 +22,7 @@
         font-size: 8vw;
     }
     body::before{
-        height: 160vh;
+        height: 200vh;
     }
     .selecao-de-personagens{
         flex-direction: column-reverse;
@@ -66,6 +66,10 @@
         font-size: 7.5vw;
         margin-top: 15%;
         width: 90%;
+        padding: 5% 2%;
+    }
+    .rodape hr {
+        margin: 5%;
     }
 }
 
@@ -74,7 +78,7 @@
         font-size: 8vw;
     }
     body::before{
-        height: 230vh;
+        height: 270vh;
     }
     .selecao-de-personagens{
         flex-direction: column-reverse;
@@ -114,5 +118,9 @@
         font-size: 7.5vw;
         margin-top: 10%;
         width: 90%;
+        padding: 5% 0;
+    }
+    .rodape hr {
+        margin: 5% 2%;
     }
 }
