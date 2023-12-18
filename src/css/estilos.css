@@ -76,13 +76,11 @@ body::before{
 }
 .lista-de-personagens .personagem.selecionada {
     border-radius: 30px;
-    box-shadow: 0px 0px 24px 5px #ff0000; 
-    outline: 0;
+    box-shadow: 0px 0px 24px 5px #ff0000;
     transition-duration: .1s;
 }
-.lista-de-personagens .personagem.selecionada img:focus, .lista-de-personagens .personagem img:focus {
-    outline: 0;
-    box-shadow: 0 0 10px #ff0000;
+.lista-de-personagens .personagem img:focus-visible {
+    box-shadow: 0 0 20px #ff0000;
 }
 .personagem-selecionada {
     text-align: center;
@@ -150,10 +148,15 @@ body::before{
     padding: 0.5%;
     transition-duration: .2s;
 }
-.rodape a:hover {
+.rodape a:focus-visible {
+    outline: auto;
+}
+.rodape a:hover,
+.rodape a:focus-visible {
     color: #ff3d3d;
     background-color: rgba(255, 255, 255, 0.034);
 }
 .rodape a:active {
     color: white;
+    background-color: rgba(255, 255, 255, 0.123);
 }

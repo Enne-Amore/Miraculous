@@ -3,6 +3,11 @@
     box-sizing: border-box;
     padding: 0;
 }
+
 ul {
     list-style: none;
+}
+
+:focus {
+    outline: 0;
 }
