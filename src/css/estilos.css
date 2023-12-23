@@ -1,9 +1,8 @@
 @charset "UTF-8";
 
 /* A mente do site */
-
 body {
-    background-color: rgb(46, 46, 255);
+    background-color: var(--azul);
     color: white;
     font-family: Parisienne;
     font-size: 1.8em;
@@ -19,7 +18,7 @@ body::before{
     z-index: -1;
     width: 100%;
     min-height: 100vh;
-    height: 230vh;
+    height: 240vh;
     opacity: 0.6;
 }
 
@@ -63,7 +62,7 @@ body::before{
 .selecao-de-personagens .personagens .titulo {
     letter-spacing: 0.3px;
     text-transform: none;
-    border-bottom: 2px solid #ff0000;
+    border-bottom: 2px solid var(--vermelha-escura);
     width: 100%;
     text-align: center;
     font-size: 1.9em;
@@ -72,22 +71,22 @@ body::before{
     width: 100%;
     height: 100%;
     border-radius: 30px;
-    border-bottom: 10px ridge #ff0000;
+    border-bottom: 10px ridge var(--vermelha-escura);
 }
 .lista-de-personagens .personagem.selecionada {
     border-radius: 30px;
-    box-shadow: 0px 0px 24px 5px #ff0000;
+    box-shadow: 0px 0px 24px 5px var(--vermelha-escura);
     transition-duration: .1s;
 }
 .lista-de-personagens .personagem img:focus-visible {
-    box-shadow: 0 0 20px #ff0000;
+    box-shadow: 0 0 20px var(--vermelha-escura);
 }
 .personagem-selecionada {
     text-align: center;
     max-height: 100%;
     margin-left: 5%;
     margin-top: 3%;
-    box-shadow: 0px 0px 24px 5px #f12424;
+    box-shadow: 0px 0px 24px 5px var(--vermelha);
     border-radius: 0.1em;
     backdrop-filter: blur(10px);
     width: 100%;
@@ -98,7 +97,7 @@ body::before{
     border-radius: 0.1em 0.1em 0 0;
 }
 .personagem-selecionada .nome-de-personagem {
-    border-bottom: 2px solid #ff0000;
+    border-bottom: 2px solid var(--vermelha-escura);
     letter-spacing: 4px;
     text-transform: capitalize;
     width: 100%;
@@ -121,8 +120,9 @@ body::before{
 
 .rodape {
     background: transparent;
-    border: 2px solid rgba(255, 255, 255, 0.603);
+    border: 2px solid #ffffff9a;
     backdrop-filter: blur(10px);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.356);
     width: 60%;
     border-radius: 1em;
     margin: 6% auto;
@@ -138,14 +138,16 @@ body::before{
 .rodape .lista-de-fontes {
     display: flex;
     flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
 }
 
 .rodape a {
-    color: #ff0000;
-    text-decoration: none;
+    color: var(--vermelha-escura);
     font-weight: bold;
     border-radius: 1em;
-    padding: 0.5%;
+    padding: 1% 0.5%;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.199);
     transition-duration: .2s;
 }
 .rodape a:focus-visible {
@@ -153,7 +155,7 @@ body::before{
 }
 .rodape a:hover,
 .rodape a:focus-visible {
-    color: #ff3d3d;
+    color: var(--vemelha-clara);
     background-color: rgba(255, 255, 255, 0.034);
 }
 .rodape a:active {

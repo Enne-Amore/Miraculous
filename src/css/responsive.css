@@ -22,7 +22,7 @@
         font-size: 8vw;
     }
     body::before{
-        height: 200vh;
+        height: 230vh;
     }
     .selecao-de-personagens{
         flex-direction: column-reverse;
@@ -78,7 +78,7 @@
         font-size: 8vw;
     }
     body::before{
-        height: 270vh;
+        height: 290vh;
     }
     .selecao-de-personagens{
         flex-direction: column-reverse;

@@ -4,8 +4,20 @@
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 ul {
     list-style: none;
+}
+
+:root {
+    --azul: #2e2eff;
+    --vermelha-escura: #ff0000;
+    --vermelha: #f12424;
+    --vemelha-clara: #ff3d3d;
+    --branca-transparente: #ffffff9a;
 }
 
 :focus {

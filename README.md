@@ -1,5 +1,5 @@
 
-# 🌸 Miraculous
+# 🐞 Miraculous
 
 Um site web que apresenta a maioria das portadoras de miraculous de uma em uma a medida que você seleciona a personagem usando o próprio ponteiro do mouse ou usando a tecla "tab" caso esteja pelo desktop, e se estiver pelo celular, basta dar um clique na personagem desejada. 
 
@@ -19,30 +19,26 @@ Um site web que apresenta a maioria das portadoras de miraculous de uma em uma a
 ## 🪄 Funcionalidades
 
 - Mais acessibilidade usando a tecla "tab"
+- Trocar informações do mesmo lugar conforme cada personagem vai sendo selecionada por mouse, tecla ou clique
 - Efeitos de "hover" e de "active" nos elementos clicáveis
 
 ## 🌈 Documentação de cores
 
 | Cor               | Hexadecimal                                                |
 | ----------------- | ---------------------------------------------------------------- |
-| Azul Clara       | ![#7cc2ff](https://via.placeholder.com/10/7cc2ff?text=+) #7cc2ff |
-| Azul Escura       | ![#698bac](https://via.placeholder.com/10/698bac?text=+) #698bac |
-| Azul Transparente       | ![#7cc2ff48](https://via.placeholder.com/10/7cc2ff48?text=+) #7cc2ff48 |
-| Rosa Clara       | ![#FFC8DD](https://via.placeholder.com/10/FFC8DD?text=+) #FFC8DD |
-| Rosa Neutra      | ![#ff81b1](https://via.placeholder.com/10/ff81b1?text=+) #ff81b1 |
-| Rosa Escura       | ![#ff609a](https://via.placeholder.com/10/ff609a?text=+) #ff609a |
-| Cinza Clara       | ![#f8f8f8](https://via.placeholder.com/10/f8f8f8?text=+) #f8f8f8 |
-| Roxa       | ![#a479c0](https://via.placeholder.com/10/a479c0?text=+) #a479c0 |
+| Azul       | ![#2e2eff](https://via.placeholder.com/10/2e2eff?text=+) #2e2eff |
+| Vermelha Escura       | ![#ff0000](https://via.placeholder.com/10/ff0000?text=+) #ff0000 |
+| Vermelha Neutra       | ![#f12424](https://via.placeholder.com/10/f12424?text=+) #f12424 |
+| Vermelha Clara       | ![#ff3d3d](https://via.placeholder.com/10/ff3d3d?text=+) #ff3d3d |
+| Branca Transparente      | ![#ffffff9a](https://via.placeholder.com/10/ffffff9a?text=+) #ffffff9a |
 
 
 ## 🌟 Referências De Uso
 
- - [Instagram ícones criados por Freepik - Flaticon](https://www.flaticon.com/br/icones-gratis/instagram)
- - [Discordia ícones criados por Freepik - Flaticon](https://www.flaticon.com/br/icones-gratis/discordia)
- - [Tiktok ícones criados por Freepik - Flaticon](https://www.flaticon.com/br/icones-gratis/tiktok)
- - [Facebook ícones criados por Freepik - Flaticon](https://www.flaticon.com/br/icones-gratis/facebook)
- - [Seta Neon](https://br.pinterest.com/pin/827606869011836550/)
- - [Imagens De Afins](https://www.canva.com/)
+ - [Ícone Do Site](https://www.amazon.com/ZAG-STORE-Miraculous-Ladybug-Stickers/dp/B09RSKJMNG)
+ - [Logo De Miraculous](https://www.blogger.com/blogin.g?blogspotURL=https://james-hunker.blogspot.com/2021/05/31-miraculous-ladybug-logo.html&type=blog)
+ - [Imagem De Cada Personagem](https://br.pinterest.com)
+ - [Fonte De Texto](https://fonts.googleapis.com/css2?family=Parisienne&display=swap)
 
 
 ## 🔧 Suporte
