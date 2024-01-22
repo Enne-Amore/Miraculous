@@ -23,3 +23,21 @@ ul {
 :focus {
     outline: 0;
 }
+
+/* Estilização da barrinha de rolagem */
+::-webkit-scrollbar {
+    width: auto;
+}
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--vemelha-clara);
+    border-radius: 1em;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--vermelha);
+}
+::-webkit-scrollbar-thumb:active {
+    background-color: var(--vermelha-escura);
+}
