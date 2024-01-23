@@ -36,7 +36,6 @@ body::before{
 }
 
 /* o conteúdo do site */
-
 .selecao-de-personagens {
     display: flex;
     flex-direction: row; /* Por padrão. Nesse caso, nem precisa. */
@@ -46,17 +45,20 @@ body::before{
     justify-content: center;
     margin: 0 10%;
 }
+
 .selecao-de-personagens .lista-de-personagens {
     display: flex;
-    flex-wrap: nowrap;
-    gap: 1%;
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.2em;
+    width: 100%;
 }
+
 .selecao-de-personagens .personagens {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 100%;
+    max-width: 65%;
     gap: 8px;
 }
 .selecao-de-personagens .personagens .titulo {
@@ -66,6 +68,9 @@ body::before{
     width: 100%;
     text-align: center;
     font-size: 1.9em;
+}
+.lista-de-personagens .personagem {
+    width: 15%;
 }
 .lista-de-personagens .personagem img {
     width: 100%;
@@ -81,6 +86,7 @@ body::before{
 .lista-de-personagens .personagem img:focus-visible {
     box-shadow: 0 0 20px var(--vermelha-escura);
 }
+
 .personagem-selecionada {
     text-align: center;
     max-height: 100%;
@@ -89,7 +95,7 @@ body::before{
     box-shadow: 0px 0px 24px 5px var(--vermelha);
     border-radius: 0.1em;
     backdrop-filter: blur(10px);
-    width: 100%;
+    max-width: 30%;
 }
 .personagem-selecionada .personagem-grande {
     width: 100%;
@@ -130,9 +136,12 @@ body::before{
     text-align: center;
     font-size: 1.2em;
 }
+.rodape p {
+    padding: 0 2%;
+}
 
 .rodape hr {
-    margin: 2% 5%;
+    margin: 2%;
 }
 
 .rodape .lista-de-fontes {

@@ -5,14 +5,14 @@
 @media screen and (max-height: 1023px) and (max-width: 1024px) and (min-width: 768px) {
     body::before {
         background-attachment: fixed;
-        min-height: 470vh;
+        min-height: 550vh;
     }
 }
 
 @media screen and (min-height: 2000px) {
     body::before {
         background-attachment: fixed;
-        max-height: 180vh;
+        max-height: 280vh;
     }
 }
 
@@ -22,15 +22,22 @@
         font-size: 8vw;
     }
     body::before{
-        height: 230vh;
+        height: calc(100vh + 55em);
+        background-attachment: fixed;
     }
+
+    .cabecalho .logo {
+        margin: 5%;
+        margin-bottom: 8%;
+    }
+
     .selecao-de-personagens{
         flex-direction: column-reverse;
-        max-width: 430px;
         margin: 0 auto;
     }
     .selecao-de-personagens .personagens{
         margin-top: 37px;
+        max-width: 90%;
     }
 
     .selecao-de-personagens .personagens .titulo{
@@ -39,6 +46,9 @@
     .selecao-de-personagens .lista-de-personagens{
         gap: 9px;
         margin: auto 1.5%;
+    }
+    .lista-de-personagens .personagem {
+        width: 22%;
     }
     .lista-de-personagens .personagem img {
         border-radius: 15px;
@@ -49,7 +59,7 @@
 
     .personagem-selecionada {
         margin: 0;
-        width: 80%;
+        max-width: 80%;
     }
     .personagem-selecionada .nome-de-personagem {
         font-size: 1.2em;
@@ -63,13 +73,16 @@
     }
 
     .rodape {
-        font-size: 7.5vw;
-        margin-top: 15%;
+        font-size: 7vw;
+        margin-top: 20%;
         width: 90%;
         padding: 5% 2%;
     }
     .rodape hr {
-        margin: 5%;
+        margin: 5% 3% 3%;
+    }
+    .rodape .lista-de-fontes a {
+        padding: 8px 0;
     }
 }
 
@@ -78,8 +91,14 @@
         font-size: 8vw;
     }
     body::before{
-        height: 290vh;
+        height: 350vh;
     }
+
+    .cabecalho .logo {
+        margin: 4%;
+        margin-bottom: 5%;
+    }
+
     .selecao-de-personagens{
         flex-direction: column-reverse;
         max-width: 90%;
@@ -87,6 +106,7 @@
     }
     .selecao-de-personagens .personagens{
         margin-top: 37px;
+        max-width: 100%;
     }
 
     .selecao-de-personagens .personagens .titulo{
@@ -94,6 +114,9 @@
     }
     .selecao-de-personagens .lista-de-personagens{
         gap: 9px;
+    }
+    .lista-de-personagens .personagem {
+        width: 18%;
     }
     .lista-de-personagens .personagem img {
         border-radius: 18px;
@@ -104,7 +127,7 @@
 
     .personagem-selecionada {
         margin: 0;
-        width: 80%;
+        max-width: 80%;
     }
     .personagem-selecionada .nome-de-personagem {
         font-size: 1.2em;
@@ -115,12 +138,18 @@
     }
 
     .rodape {
-        font-size: 7.5vw;
-        margin-top: 10%;
+        font-size: 7vw;
+        margin-top: 15%;
         width: 90%;
         padding: 5% 0;
     }
+    .rodape p {
+        padding: 0 5%;
+    }
     .rodape hr {
-        margin: 5% 2%;
+        margin: 5%;
+    }
+    .rodape .lista-de-fontes a {
+        padding: 10px 0;
     }
 }
