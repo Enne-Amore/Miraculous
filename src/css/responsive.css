@@ -17,7 +17,7 @@
 }
 
 /* Ajustes gerais nas telas menores */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) and (orientation: portrait) {
     body {
         font-size: 8vw;
     }
@@ -40,10 +40,10 @@
         max-width: 90%;
     }
 
-    .selecao-de-personagens .personagens .titulo{
+    .selecao-de-personagens .personagens .titulo {
         font-size: 1.2em;
     }
-    .selecao-de-personagens .lista-de-personagens{
+    .selecao-de-personagens .lista-de-personagens {
         gap: 9px;
         margin: auto 1.5%;
     }
@@ -86,7 +86,7 @@
     }
 }
 
-@media screen and (min-width: 600px) and (max-width: 1220px){
+@media screen and (min-width: 600px) and (max-width: 1220px) and (orientation: portrait) {
     body {
         font-size: 8vw;
     }
@@ -151,5 +151,51 @@
     }
     .rodape .lista-de-fontes a {
         padding: 10px 0;
+    }
+}
+
+@media screen and (max-width: 1200px) and (orientation: landscape) {
+    body {
+        font-size: 3vw;
+    }
+    body::before{
+        height: calc(100vh + 55em);
+        background-attachment: fixed;
+    }
+
+    .selecao-de-personagens {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    .selecao-de-personagens .personagens {
+        margin-top: 37px;
+        max-width: 90%;
+    }
+    .selecao-de-personagens .lista-de-personagens {
+        gap: 9px;
+    }
+    .lista-de-personagens .personagem {
+        width: 14%;
+    }
+    .lista-de-personagens .personagem img {
+        border-radius: 18px;
+    }
+
+    .personagem-selecionada {
+        display: flex;
+        max-width: 80%;
+        margin: auto;
+    }
+    .personagem-selecionada .personagem-grande {
+        max-width: 10em;
+    }
+    .personagem-selecionada .nome-de-personagem {
+        margin-top: 0.5em;
+    }
+
+    .rodape {
+        width: 78%;
     }
 }

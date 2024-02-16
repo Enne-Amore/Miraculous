@@ -60,7 +60,7 @@ function removerSelecaoDaPersonagem() {
 
 function alterarImagemDaPersonagemSelecionada(personagem) {
     // passo 1 - pegar o elemento da personagem grande pra adicionar as informações nela
-    const imagemPersonagemGrande = document.querySelector('.personagem-grande')
+    const imagemPersonagemGrande = document.querySelector('.personagem-grande img')
 
     // passo 2 - alterar a imagem da personagem grande
     const idPersonagem = personagem.attributes.id.value
